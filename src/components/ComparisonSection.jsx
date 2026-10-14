@@ -3,11 +3,6 @@ import { Check, X, Sparkles, Star } from "lucide-react";
 
 const COMPARISON_ITEMS = [
   {
-    feature: "Ad-free Experience",
-    vibora: "Zero ads, zero data tracking or behavioral profiling",
-    others: "Intrusive sponsored ads and continuous telemetry collection",
-  },
-  {
     feature: "Media & Call Quality",
     vibora: "Lossless HD audio, crisp 60fps video & uncompressed voice notes",
     others: "Heavily compressed photos, video lag and audio dropouts",
