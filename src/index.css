@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-vibora-bg: #0a0620;
+  --color-vibora-bgSoft: #0d0824;
+  --color-vibora-bgDeep: #080418;
+  --color-vibora-bgWarm: #0b0526;
+  --color-vibora-cream: #f5ede0;
+  --color-vibora-blue: #5b8def;
+  --color-vibora-purple: #a855f7;
+  --color-vibora-magenta: #d946ef;
+  --color-vibora-pink: #ec4899;
+  --color-vibora-orange: #fb923c;
+  --color-vibora-gold: #f5c518;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
