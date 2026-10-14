@@ -70,6 +70,8 @@ export default function CustomCursor() {
 
       if (!isVisible) setIsVisible(true);
 
+
+
       const target = e.target;
       const magneticTarget = target.closest(
         'button, a, [role="button"], .magnetic, input[type="submit"], input[type="button"]'
@@ -178,9 +180,8 @@ export default function CustomCursor() {
 
   return (
     <div
-      className={`pointer-events-none fixed inset-0 z-[99999] overflow-hidden transition-opacity duration-300 ${
-        isVisible ? 'opacity-100' : 'opacity-0'
-      }`}
+      className={`pointer-events-none fixed inset-0 z-[99999] overflow-hidden transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'
+        }`}
       aria-hidden="true"
     >
       {/* 1. Ambient luxury spotlight halo */}
@@ -197,13 +198,12 @@ export default function CustomCursor() {
       {/* 2. Magnetic Fluid Ring */}
       <div
         ref={ringRef}
-        className={`pointer-events-none absolute top-0 left-0 transition-all duration-200 ease-out flex items-center justify-center ${
-          magneticState
-            ? 'border-2 border-pink-400/80 bg-pink-500/10 shadow-[0_0_20px_rgba(236,72,153,0.4)] backdrop-blur-[2px]'
-            : isClicking
+        className={`pointer-events-none absolute top-0 left-0 transition-all duration-200 ease-out flex items-center justify-center ${magneticState
+          ? 'border-2 border-pink-400/80 bg-pink-500/10 shadow-[0_0_20px_rgba(236,72,153,0.4)] backdrop-blur-[2px]'
+          : isClicking
             ? 'w-7 h-7 -ml-3.5 -mt-3.5 rounded-full border-2 border-purple-400 bg-purple-500/20 scale-90 shadow-[0_0_12px_rgba(168,85,247,0.4)]'
             : 'w-8 h-8 -ml-4 -mt-4 rounded-full border border-pink-500/40 bg-pink-500/5 shadow-[0_0_10px_rgba(236,72,153,0.2)]'
-        }`}
+          }`}
         style={{
           width: magneticState ? `${magneticState.width}px` : undefined,
           height: magneticState ? `${magneticState.height}px` : undefined,
@@ -214,11 +214,10 @@ export default function CustomCursor() {
       >
         {!magneticState && (
           <div
-            className={`rounded-full transition-all duration-150 ${
-              isClicking
-                ? 'w-1 h-1 bg-white'
-                : 'w-1.5 h-1.5 bg-gradient-to-r from-pink-400 to-purple-400 shadow-[0_0_6px_#ec4899]'
-            }`}
+            className={`rounded-full transition-all duration-150 ${isClicking
+              ? 'w-1 h-1 bg-white'
+              : 'w-1.5 h-1.5 bg-gradient-to-r from-pink-400 to-purple-400 shadow-[0_0_6px_#ec4899]'
+              }`}
           />
         )}
       </div>

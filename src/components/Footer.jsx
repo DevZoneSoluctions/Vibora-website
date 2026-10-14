@@ -169,10 +169,7 @@ const Footer = () => {
 
         {/* ── Bottom Bar ────────────────────────────────────────────── */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-[#f5ede0]/50 text-center sm:text-left">
-          <p>© 2025 Vibora. All rights reserved.</p>
-          <p className="flex items-center gap-1.5 text-[#f5ede0]/65">
-            Made with <span className="text-[#a855f7]">💜</span> for the global community
-          </p>
+          <p>© 2026 Vibora. All rights reserved.</p>
         </div>
       </div>
     </footer>
